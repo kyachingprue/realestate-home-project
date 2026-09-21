@@ -4,8 +4,13 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import ScrollTop from './components/ScrollTop'
 import Home from './pages/Home'
-import { Properties, PropertyDetails } from './pages/Properties'
-import { About, Services, Blog, Contact, NotFound } from './pages/Others'
+import { About } from './pages/About'
+import { Services } from './pages/Services'
+import { Blog } from './pages/Blog'
+import { Contact } from './pages/Contact'
+import { NotFound } from './pages/NotFound'
+import Properties from './pages/Properties'
+
 export default function App() {
   const { pathname } = useLocation()
   useEffect(() => {
@@ -18,7 +23,6 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/properties" element={<Properties />} />
-          <Route path="/properties/:id" element={<PropertyDetails />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/blog" element={<Blog />} />
