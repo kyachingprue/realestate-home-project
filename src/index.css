@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@theme{--color-brand-900:#062d21;--color-brand-800:#0a3d2d;--color-brand-700:#0f5a41;--color-gold:#f4b73f;}
+html{scroll-behavior:smooth}
+body{font-family:"Poppins",system-ui,sans-serif;background:#f7f8f6;color:#12261e}
+.wrap{max-width:80rem;margin-inline:auto;padding-inline:1rem}
+@media(min-width:640px){.wrap{padding-inline:1.5rem}}@media(min-width:1024px){.wrap{padding-inline:2rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
