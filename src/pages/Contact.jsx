@@ -1,9 +1,20 @@
 import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa"
 import { PageHero, Reveal } from "../components/ui"
 import ModernFeatureCard from "../components/ModernFeatureCard"
+import { Helmet } from "react-helmet-async"
 
 export const Contact = () => (
   <>
+    <Helmet>
+      <title>Contact | Real Estate</title>
+
+      <meta
+        name="description"
+        content="Explore our collection of premium properties, homes, apartments and investment opportunities."
+      />
+
+      <link rel="canonical" href="https://yourwebsite.com/properties" />
+    </Helmet>
     <PageHero
       title="Contact Us"
       sub="Tell us what you're looking for and an agent will call you back."
@@ -52,6 +63,6 @@ export const Contact = () => (
         </Reveal>
       </div>
     </section>
-    <ModernFeatureCard/>
+    <ModernFeatureCard />
   </>
 )

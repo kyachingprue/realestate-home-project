@@ -28,6 +28,7 @@ import {
   agents,
   posts
 } from '../data'
+import { Helmet } from 'react-helmet-async'
 const Sel = ({ icon: I, label, opts }) => (
   <label className="flex items-center gap-3 px-4 py-2">
     <I className="text-brand-800" />
@@ -49,6 +50,22 @@ export default function Home() {
   const list = props.filter(p => cat === 'All' || p.type === cat)
   return (
     <>
+      <Helmet>
+        <title>Real Estate | Find Your Dream Property</title>
+
+        <meta
+          name="description"
+          content="Discover premium properties, modern homes, apartments and investment opportunities."
+        />
+
+        <meta
+          name="keywords"
+          content="real estate, properties, homes, apartments, property investment"
+        />
+
+        <link rel="canonical" href="https://yourwebsite.com/" />
+      </Helmet>
+
       <section className="relative overflow-hidden bg-brand-900 pb-16 pt-32 lg:min-h-screen lg:pt-36">
         <div className="wrap grid items-center gap-10 lg:grid-cols-2">
           <motion.div

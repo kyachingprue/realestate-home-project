@@ -1,9 +1,20 @@
+import { Helmet } from "react-helmet-async";
 import BlogFeature from "../components/BlogFeature";
 import { PageHero, Reveal } from "../components/ui";
 import { posts, u } from "../data";
 
 export const Blog = () => (
   <>
+    <Helmet>
+      <title>Blog | Real Estate</title>
+
+      <meta
+        name="description"
+        content="Explore our collection of premium properties, homes, apartments and investment opportunities."
+      />
+
+      <link rel="canonical" href="https://yourwebsite.com/properties" />
+    </Helmet>
     <PageHero
       title="Insights & Tips"
       sub="Market news, buying guides and expert advice."
@@ -33,6 +44,6 @@ export const Blog = () => (
         ))}
       </div>
     </section>
-    <BlogFeature/>
+    <BlogFeature />
   </>
 )

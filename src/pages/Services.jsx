@@ -2,9 +2,20 @@ import { Link } from "react-router";
 import { PageHero, Reveal } from "../components/ui";
 import { services } from "../data";
 import ServiceFeature from "../components/ServiceFeature";
+import { Helmet } from "react-helmet-async";
 
 export const Services = () => (
   <>
+    <Helmet>
+      <title>Services | Real Estate</title>
+
+      <meta
+        name="description"
+        content="Explore our collection of premium properties, homes, apartments and investment opportunities."
+      />
+
+      <link rel="canonical" href="https://yourwebsite.com/properties" />
+    </Helmet>
     <PageHero
       title="Our Services"
       sub="Complete real estate solutions under one roof."
@@ -32,6 +43,6 @@ export const Services = () => (
         ))}
       </div>
     </section>
-    <ServiceFeature/>
+    <ServiceFeature />
   </>
 )

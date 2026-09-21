@@ -1,9 +1,20 @@
+import { Helmet } from "react-helmet-async";
 import AboutFeature from "../components/AboutFeature";
 import { Btn, Head, PageHero, Reveal } from "../components/ui";
 import { agents, IMG, stats, u, why } from "../data";
 
 export const About = () => (
   <>
+    <Helmet>
+      <title>About | Real Estate</title>
+
+      <meta
+        name="description"
+        content="Explore our collection of premium properties, homes, apartments and investment opportunities."
+      />
+
+      <link rel="canonical" href="https://yourwebsite.com/properties" />
+    </Helmet>
     <PageHero
       title="About Us"
       sub="We make real estate simple, safe and successful for everyone."
@@ -84,6 +95,6 @@ export const About = () => (
         </div>
       </div>
     </section>
-    <AboutFeature/>
+    <AboutFeature />
   </>
 )
