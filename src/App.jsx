@@ -10,6 +10,7 @@ import { Blog } from './pages/Blog'
 import { Contact } from './pages/Contact'
 import { NotFound } from './pages/NotFound'
 import Properties from './pages/Properties'
+import PropertyDetails from './components/PropertyDetails'
 
 export default function App() {
   const { pathname } = useLocation()
@@ -23,6 +24,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/properties" element={<Properties />} />
+          <Route path="/properties/:id" element={<PropertyDetails />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/blog" element={<Blog />} />

@@ -1,5 +1,6 @@
 import { FaEnvelope, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa"
 import { PageHero, Reveal } from "../components/ui"
+import ModernFeatureCard from "../components/ModernFeatureCard"
 
 export const Contact = () => (
   <>
@@ -11,7 +12,7 @@ export const Contact = () => (
       <div className="wrap grid gap-8 lg:grid-cols-5">
         <Reveal className="space-y-5 rounded-3xl bg-brand-900 p-8 text-white lg:col-span-2">
           {[
-            [FaPhoneAlt, '+880 1783 542294'],
+            [FaPhoneAlt, '+880 1234567890'],
             [FaEnvelope, 'info@realestate.com'],
             [FaMapMarkerAlt, 'Dhaka, Bangladesh']
           ].map(([I, t]) => (
@@ -51,5 +52,6 @@ export const Contact = () => (
         </Reveal>
       </div>
     </section>
+    <ModernFeatureCard/>
   </>
 )
